@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  cursor: none;
+  background-color: rgb(123, 92, 92);
+}
+
+@-webkit-keyframes cursorAnima {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cursorAnima {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cucursor_icon {
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+}/*# sourceMappingURL=mouse.css.map */

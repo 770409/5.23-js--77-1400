@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: none;
+    // cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y = '50%'>🐕</text></svg>"),
+    //     auto;
+    background-color: rgb(123, 92, 92);
+}
+
+@keyframes cursorAnima {
+    0% {
+        opacity: 0;
+
+    }
+
+    25%{
+        opacity: 1;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
+
+// .cucursor {
+//     width: 0px;
+//     height: 0px;
+//     border-radius: 50%;
+//     background-color: rgb(223, 192, 181);
+//     opacity: 0;
+//     position: absolute;
+//     animation: cursorAnima 3s linear 0s infinite alternate;
+//     animation-play-state: paused;
+
+// }
+// .start{
+//     animation-play-state: running;
+// }
+
+
+.cucursor_icon{
+
+    // background-image: url(../img/4.jfif);
+    // background-size: cover;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+}
+
