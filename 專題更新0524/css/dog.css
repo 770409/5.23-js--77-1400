@@ -790,6 +790,103 @@ main #menu .menu_text ul {
 }
 main #news {
   height: 1640px;
+  background-color: #F0ECEA;
+}
+main #news .container {
+  margin-bottom: 57px;
+  padding-top: 157px;
+}
+main #news .container .news_show h1 {
+  font-size: 44px;
+  color: #796F61;
+  margin: 0 0 0 0;
+}
+main #news .container .news_show hr {
+  margin: 28px 0;
+}
+main #news .container .news_show .cardBox {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 38px;
+}
+main #news .container .news_show .cardBox .foot {
+  position: absolute;
+  top: -270px;
+  right: -250px;
+}
+main #news .container .news_show .cardBox .card1 {
+  width: 25%;
+  padding: 20px 20px 55px;
+}
+main #news .container .news_show .cardBox .card1 .card_p {
+  width: 100%;
+}
+main #news .container .news_show .cardBox .card1 .card_date {
+  color: #595349;
+  font-size: 35px;
+  margin: 15px 0px;
+  letter-spacing: 5px;
+}
+main #news .container .news_show .cardBox .card1 p {
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: #796F61;
+}
+main #news .container .news_show .cardBox .card1 .more {
+  display: flex;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+main #news .container .news_show .cardBox .card1 .more span {
+  font-size: 16px;
+  line-height: 50px;
+  color: #796F61;
+}
+main #news .container .news_show .cardBox .card1 .more .more_p {
+  width: 50px;
+  height: 50px;
+}
+main #news .news_propaganda {
+  position: relative;
+}
+main #news .news_propaganda .grass {
+  width: 100%;
+  z-index: 2;
+}
+main #news .news_propaganda .con2 {
+  position: absolute;
+  top: 0px;
+  width: 1280px;
+  margin: 0 calc((100% - 1280px) / 2);
+}
+main #news .news_propaganda .con2 .propaganda {
+  width: 100%;
+}
+main #news .news_propaganda .con2 .propaganda .propaganda_PM {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+  height: 829px;
+  margin-top: -100px;
+  margin-left: -86px;
+  z-index: 5;
+}
+main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+  margin: 50px 68px 0 86px;
+}
+main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+}
+main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+  color: rgb(255, 255, 255);
+  letter-spacing: 8px;
+  font-size: 16px;
 }
 main #contact_us {
   height: 100vh;
