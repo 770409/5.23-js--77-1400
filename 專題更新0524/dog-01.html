@@ -264,77 +264,34 @@
         <!-- 最新消息 -->
         <section id="news">
             <div class="container">
-                <div class="news_header">
-                    <img class="news_dog" src="./picture/NEWS DOG 1.png" alt="">
-                </div>
-
-                <!-- 倫波 -->
-                <div class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <!-- 卡1 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <figure class="card__thumb">
-                                    <img src="./picture/news-1.jpg" alt="Picture by Kyle Cottrell" class="card__image">
-                                    <figcaption class="card__caption">
-                                        <h2 class="card__title">NASA Has Found Hundreds Of Potential New Planets</h2>
-                                        <p class="card__snippet">NASA released a list of 219 new “planet candidates”
-                                            discovered by the Kepler space telescope, 10 of which are similar to Earth’s
-                                            size and may be habitable by other life forms.</p>
-                                        <a href="" class="card__button">Read more</a>
-                                    </figcaption>
-                                </figure>
+                <div class="news_show">
+                    <h1></h1>
+                    <hr>
+                    <div class="cardBox">
+                        <div class="card1">
+                            <img src="" alt="">
+                            <h2></h2>
+                            <p></p>
+                            <div class="more">
+                                <span></span>
+                                <img src="" alt="">
                             </div>
                         </div>
-
-                        <!-- 卡2 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <figure class="card__thumb">
-                                    <img src="https://source.unsplash.com/71u2fOofI-U/300x510"
-                                        alt="Picture by Nathan Dumlao" class="card__image">
-                                    <figcaption class="card__caption">
-                                        <h2 class="card__title">This Is Your Body And Brain On Coffee</h2>
-                                        <p class="card__snippet">Drinking more caffeine during the coronavirus lockdown?
-                                            Here's how
-                                            it can affect you over time and advice on making it better for you.</p>
-                                        <a href="" class="card__button">Read more</a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- 卡3 -->
-                        <div class="swiper-slide">
-
-                            <div class="card">
-                                <figure class="card__thumb">
-                                    <img src="https://source.unsplash.com/qXMpNtNp1uE/300x510"
-                                        alt="Picture by Daniel Lincoln" class="card__image">
-                                    <figcaption class="card__caption">
-                                        <h2 class="card__title">Why You Should Bring Your Dog To Work</h2>
-                                        <p class="card__snippet">On Friday, offices around the country celebrated the
-                                            15th annual
-                                            Take Your Dog to Work Day. Though the event's primary goal is to raise
-                                            awareness for pet
-                                            adoption, the unanticipated impact may be a slightly more relaxing work
-                                            environment for
-                                            any office choosing to participate.</p>
-                                        <a href="" class="card__button">Read more</a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
-
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="propaganda">
+                    <img class="grass" src="" alt="">
+                    <div class="propaganda_PM">
+                        <img src="" alt="">
+                        <div class="propaganda_main">
+                            <h2 class="propaganda_title"></h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-            <!-- <img class="wall_dog" data-aos="fade-up" data-aos-duration="20000" src="./svg/walldog 3.svg" alt=""
-                style="width: 100%;"> -->
         </section>
 
         <!-- 聯絡我們 -->
@@ -364,7 +321,7 @@
 
                 <div class="information_map">
                     <div class="map_box">
-                        <img class="map_1" src="./picture/information-picture/map 1.png" alt="">
+                        <img class="map_1" src="./picture/information-picture/狗勾map01.png" alt="">
                         <iframe class="maps"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5980617232785!2d120.66347041523505!3d24.150749779280613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9dfeee8a2d%3A0x33df3d8886b7899b!2z5pSc5pe6Y2FmZeWPsOS4reWvteeJqemkkOW7sybmtarmtarkuK3pgJTlrbjmoKE!5e0!3m2!1szh-TW!2stw!4v1652977164988!5m2!1szh-TW!2stw"
                             width="475" height="350" style="border:0;" allowfullscreen="" loading="lazy"
@@ -533,29 +490,28 @@
 
     </script>
 
-<!-- 菜單區 -->
-<script>
-    let img_box = document.querySelector('#img_box');
-    let img_box_mask = document.querySelector('.img_box_mask');       
-    window.onscroll = function ()
-    {
-        console.log("滾動");
-        //safari (mac or iphone)
-        // console.log(document.body.scrollTop);
-        //其他瀏覽器
-        console.log(document.documentElement.scrollTop );
+    <!-- 菜單區 -->
+    <script>
+        let img_box = document.querySelector('#img_box');
+        let img_box_mask = document.querySelector('.img_box_mask');
+        window.onscroll = function () {
+            console.log("滾動");
+            //safari (mac or iphone)
+            // console.log(document.body.scrollTop);
+            //其他瀏覽器
+            console.log(document.documentElement.scrollTop);
 
-        if (document.body.scrollTop > 2000 ||
-                          document.documentElement.scrollTop > 2000) {
-            console.log("大於750");
-            // box.classList.add("active");   
-            img_box_mask.classList.add("on");
-        } 
-    };
+            if (document.body.scrollTop > 2000 ||
+                document.documentElement.scrollTop > 2000) {
+                console.log("大於750");
+                // box.classList.add("active");   
+                img_box_mask.classList.add("on");
+            }
+        };
     </script>
 
 
-     <!-- 新聞區 -->
+    <!-- 新聞區 -->
     <script>
         var swiper_news = new Swiper(".mySwiper2", {
             slidesPerView: 3,
