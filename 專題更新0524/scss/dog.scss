@@ -130,7 +130,16 @@ nav {
             }
         }
     }
-
+    .back_top{
+        width: 80px;
+        height: 80px;
+        background-image: url(../picture/information-picture/回到最上面.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        margin-top: 675px;
+        margin-left: 1785px;
+    }
 }
 
 
@@ -710,8 +719,8 @@ main {
         // }
 
         #img_box {
-            width: 70%;
-            height: 70%;
+            width: 60%;
+            height: 80%;
             position: relative;
             overflow: hidden;
 
@@ -768,8 +777,15 @@ main {
 
     //最新消息
     #news {
-        height: 1640px;
+        // overflow: hidden;
+        position: relative;
+        height: 1800px;
         background-color: #F0ECEA;
+        .foot {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
 
         .container {
             margin-bottom: 57px;
@@ -791,12 +807,8 @@ main {
                     position: relative;
                     justify-content: space-between;
                     padding-top: 38px;
-
-                    .foot {
-                        position: absolute;
-                        top: -270px;
-                        right: -250px;
-                    }
+                    // overflow: hidden;
+                    
 
                     .card1 {
                         width: 25%;
@@ -848,18 +860,21 @@ main {
         }
 
         .news_propaganda {
-            position: relative;
+            // position: relative;
+            // bottom: 0px;
+            width: 100%;
 
             .grass {
-
+                position: absolute;
+                bottom: 0px;
                 width: 100%;
                 z-index: 2;
             }
 
             .con2 {
                 position: absolute;
-                top: 0px;
-                
+                // top: 0px;
+                bottom: 0px;
                 width: 1280px;
                 margin: 0 calc((100% - 1280px) / 2);
 
@@ -872,18 +887,20 @@ main {
                         justify-content: space-between;
                         
 
-                        .propaganda_picture {
-                            
-                            height: 829px;
-                            
-                            margin-top: -100px;
+                        .propaganda_picture {                          
+                            width: 40%;
+                            margin-bottom: -100px;
                             margin-left: -86px;
                             z-index: 5;
-
                         }
 
                         .propaganda_main {
-                            margin: 50px 68px 0 86px;
+                            // margin: 50px 68px 0 86px;
+                            z-index: 5;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
                             .propaganda_title{
                                 font-size: 44px;
                                 color: rgb(255, 255, 255);
@@ -915,9 +932,10 @@ main {
     #contact_us {
         height: 100vh;
         background-color: #ffffff;
+        // background-color: #6EA03B;
         position: relative;
-        background-image: url(../picture/information-picture/尾頁背景.png);
-        background-position: center;
+        background-image: url(../picture/information-picture/背景圖.jpg);
+        // background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
 
@@ -928,15 +946,13 @@ main {
 
 
         .container {
-            width: 90%;
-            height: 80%;
+            position: relative;
+            height: 100vh;
             display: flex;
             justify-content: space-between;
-
-
             .information_left {
 
-                width: 33.333%;
+                width: 600px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -945,8 +961,8 @@ main {
                 .contact_us_information {
                     // margin:0 auto;
                     background-color: rgba(255, 255, 255, .8);
-
-                    width: 440px;
+                    border: 1px solid #000;
+                    width: 600px;
                     height: 750px;
                     display: flex;
                     flex-direction: column;
@@ -959,14 +975,14 @@ main {
                         .information_picture {
                             position: absolute;
                             top: -60px;
-                            left: 270px;
+                            right: -55px;
 
 
                         }
 
                         h1 {
                             color: #7B7673;
-                            font-size: 38px;
+                            font-size: 48px;
                             margin: 0px;
                         }
 
@@ -975,14 +991,13 @@ main {
                     .contact_us_information_box {
                         display: flex;
                         flex-direction: column;
-
                         align-items: center;
+                        
 
                         img {
                             margin-top: 34px;
                             width: 340px;
                             height: 140px;
-
                         }
                     }
 
@@ -1057,33 +1072,44 @@ main {
             }
 
             .information_map {
-                width: 33.333%;
+                width: 300px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // padding: 0 50px;
 
                 .map_box {
+                    margin-left: 50px;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-
-                    .map_1 {
-                        z-index: 1;
+                    // padding: 0 20px;
+                    .map_img{
+                            height: 181px;
+                        .map_1 {
+                            height: 167px;
+                            width: 300px;
+                            z-index: 1;
+                        }
                     }
 
                     .maps {
                         margin-top: -36px;
-
+                        width: 300px;
+                        height: 280px;
                     }
 
                 }
             }
 
             .information_right {
-                width: 33.333%;
+                width: 30%;
+            //    position: absolute;
+            //    right: 0px;
                 display: flex;
-                justify-content: center;
+                justify-content: end;
                 align-items: center;
 
                 .social_media {

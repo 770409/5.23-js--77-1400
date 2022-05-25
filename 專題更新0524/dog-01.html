@@ -22,6 +22,7 @@
 
     <header>
         <nav>
+
             <div class="container">
                 <div class="menu_bar"></div>
                 <a href=""><img class="logo" src="./svg/loog2.svg" alt=""></a>
@@ -42,6 +43,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="back_top"></div>
         </nav>
     </header>
 
@@ -249,7 +251,7 @@
         <section id="menu">
             <div id="img_box">
                 <div class="img_box_mask"></div>
-                <img src="./picture/food01 1.png" alt="">
+                <img src="./picture/灰熊雞腿.jpg" alt="">
             </div>
             <div class="menu_text">
                 <h1>MENU</h1>
@@ -263,12 +265,13 @@
         </section>
         <!-- 最新消息 -->
         <section id="news">
+            <img class="foot" src="./picture/news-picture/dogfoot 2.svg" alt="">
             <div class="container">
                 <div class="news_show">
                     <h1>News</h1>
                     <hr>
                     <div class="cardBox">
-                        <img class="foot" src="./picture/news-picture/dogfoot.png" alt="">
+
                         <!-- card -->
                         <div class="card1">
                             <img class="card_p" src="./picture/news-picture/Rectangle 48.png" alt="">
@@ -384,10 +387,13 @@
 
                 <div class="information_map">
                     <div class="map_box">
-                        <img class="map_1" src="./picture/information-picture/狗勾map01.png" alt="">
+                        <div class="map_img">
+
+                            <img class="map_1" src="./picture/information-picture/狗勾map01.png" alt="">
+                        </div>
                         <iframe class="maps"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5980617232785!2d120.66347041523505!3d24.150749779280613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9dfeee8a2d%3A0x33df3d8886b7899b!2z5pSc5pe6Y2FmZeWPsOS4reWvteeJqemkkOW7sybmtarmtarkuK3pgJTlrbjmoKE!5e0!3m2!1szh-TW!2stw!4v1652977164988!5m2!1szh-TW!2stw"
-                            width="475" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
@@ -566,7 +572,7 @@
 
             if (document.body.scrollTop > 2000 ||
                 document.documentElement.scrollTop > 2000) {
-                console.log("大於750");
+                // console.log("大於750");
                 // box.classList.add("active");   
                 img_box_mask.classList.add("on");
             }
