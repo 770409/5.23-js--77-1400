@@ -135,9 +135,12 @@
 
                     <div class="row">
                         <!-- 左 -->
+                        
                         <div class="mask">
+                            
                             <img class="mask_border" src="./mask-boder/main_mask_waku.png" alt="">
                             <div class="direction">
+                                
                                 <div class="dogg dogg_1 active"></div>
                                 <div class="dogg dogg_2"></div>
                                 <div class="dogg dogg_3"></div>
@@ -304,20 +307,19 @@
                             <p>年齡：約7、8歲</p>
                             <p>性別：女生</p>
                             <p>來自：基隆寵.....</p>
-                            <div class="more">
-                                <span>查看更多</span>
-                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt="">
-                            </div>
+                            
+                                <a  href="" class="more"><span>查看更多</span>
+                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt=""></a>
+                                
+                            
                         </div>
                         <div class="card1">
                             <img class="card_p" src="./picture/news-picture/Rectangle 49.png" alt="">
                             <h2 class="card_date">2022/02/18</h2>
                             <p>攜旺2022狗狗講座課程即將開課囉!
                             </p>
-                            <div class="more">
-                                <span>查看更多</span>
-                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt="">
-                            </div>
+                            <a  href="" class="more"><span>查看更多</span>
+                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt=""></a>
                         </div>
                         <div class="card1">
                             <img class="card_p" src="./picture/news-picture/Rectangle 50.png" alt="">
@@ -325,10 +327,8 @@
                             <p>攜旺誠徵工作人員～
                             </p>
                             <p>意者請私訊．．．</p>
-                            <div class="more">
-                                <span>查看更多</span>
-                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt="">
-                            </div>
+                            <a  href="" class="more"><span>查看更多</span>
+                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt=""></a>
                         </div>
                         <div class="card1">
                             <img class="card_p" src="./picture/news-picture/Rectangle 51.png" alt="">
@@ -336,10 +336,8 @@
                             <p>非常感謝各位朋友的支持，我們現階段的募資計畫已經告一段落～商品已陸續 ...
                             </p>
 
-                            <div class="more">
-                                <span>查看更多</span>
-                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt="">
-                            </div>
+                            <a  href="" class="more"><span>查看更多</span>
+                                <img class="more_p" src="./picture/news-picture/hope 1.png" alt=""></a>
                         </div>
 
 
@@ -470,7 +468,7 @@
     </script>
 
     <!-- doggogo -->
-    <script>
+    <!-- <script>
         let dogrun = document.querySelector('.store_introduction_cute');
         window.onscroll = function () {
             // console.log("滾動");
@@ -486,7 +484,7 @@
                 dogrun.classList.add("runrun");
             }
         };
-    </script>
+    </script> -->
 
 
     <!-- 成員介紹 -->
@@ -604,6 +602,7 @@
 
     <!-- 菜單區 -->
     <script>
+        let dogrun = document.querySelector('.store_introduction_cute');
         let img_box = document.querySelector('#img_box');
         let img_box_mask = document.querySelector('.img_box_mask');
         window.onscroll = function () {
@@ -618,6 +617,12 @@
                 // console.log("大於750");
                 // box.classList.add("active");   
                 img_box_mask.classList.add("on");
+            }
+            if (document.body.scrollTop > 1160 ||
+                document.documentElement.scrollTop > 1160) {
+                // console.log("大於750");
+                // box.classList.add("active");   
+                dogrun.classList.add("runrun");
             }
             
         };

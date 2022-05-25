@@ -104,7 +104,7 @@ nav {
 
             .logo {
                 height: 80px;
-                padding: 15px 0;
+                padding: 5px 0;
             }
         }
 
@@ -173,13 +173,11 @@ main {
     #store_introduction {
         height: 1080px;
         background-color: #E9E2E2;
-
-
-
+        overflow: hidden;
         position: relative;
 
         .container {
-            width: 1610px;
+            // width: 1610px;
             margin: 0 auto;
 
 
@@ -189,7 +187,8 @@ main {
                 display: flex;
                 // position: relative;
                 padding-top: 82px;
-
+                // display: flex;
+                justify-content: space-between;
                 .store_introduction_bg1 {
                     width: 700px;
                     background-image: url(../picture/店家介紹左.svg);
@@ -243,31 +242,10 @@ main {
                     }
 
                 }
-
-
-                // .store_introduction_dog_house {
-                //     // padding: 0 15px;
-
-                //     width: 50%;
-
-                //     img {
-                //         width: 100%;
-                //     }
-
-                //     .store_introduction_youtube {
-                //         position: absolute;
-                //         background-color: #6EA03B;
-                //         width: 73%;
-                //         height: 40%;
-
-                //     }
-
-                // }
-
             }
 
             .store_introduction_down {
-
+                
                 .store_introduction_cute {
                     transform: rotateY(180deg);
                     width: 600px;
@@ -278,7 +256,7 @@ main {
                     
                 }
                 .runrun{
-                    animation: doggo 10s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+                    animation: doggo 5s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
                 }
 
                 .grass4 {
@@ -287,10 +265,12 @@ main {
                     position: absolute;
                     bottom: 0px;
                     left: 0px;
-
                 }
 
                 @keyframes doggo {
+                    0%{
+
+                    }
                     50% {
                         bottom: -60px;
                     }
@@ -358,13 +338,17 @@ main {
                         width: 70%;
                         height: 75%;
                         position: relative;
-
+                        // .icon_two{
+                        //     position: absolute;
+                        //     right: 0px;
+                        // }
                         .mask_border {
                             position: absolute;
+                            
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
-                            z-index: 10001;
+                            z-index: 1000;
                             width: 100%;
 
 
@@ -374,16 +358,16 @@ main {
                                 // height: 100%;
                             }
                         }
-
+                        
                         .direction {
-
+                            position: relative;
                             width: 100%;
                             height: 100%;
                             -webkit-mask-image: url(../mask-boder/main_mask2000.png);
                             -webkit-mask-size: contain;
                             -webkit-mask-repeat: no-repeat;
                             -webkit-mask-position: center;
-
+                            
                             .dogg {
                                 // object-fit: cover;
                                 width: 100%;
@@ -496,7 +480,7 @@ main {
                         position: absolute;
                         left: 45%;
                         transform: translateX(-50%);
-                        bottom: 265px;
+                        bottom: 20%;
                         transition: background-color 180ms ease-out;
                         z-index: 99999;
                         box-shadow: 5px 5px 5px 1px rgba(35, 35, 35, 0.3);
@@ -809,7 +793,7 @@ main {
                 top: 0px;
                 width: 100%;
                 height: 100%;
-                background-color: rgb(255, 255, 255);
+                background-color: #EFECE7;
                 z-index: 1;
                 transition: all 0.6s cubic-bezier(0.5, 0, 0.3, 1);
                 transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
