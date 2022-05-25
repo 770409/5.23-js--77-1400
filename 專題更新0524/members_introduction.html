@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/members_introduction.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="container">
+                <div class="menu_bar"></div>
+                <a href=""><img class="logo" src="./svg/loog2.svg" alt=""></a>
+                <div class="menu_main">
+                    <ul>
+                        <a href="">
+                            <li>店家理念</li>
+                        </a>
+                        <a href="">
+                            <li>美味菜單</li>
+                        </a>
+                        <a href="">
+                            <li>最新消息</li>
+                        </a>
+                        <a href="">
+                            <li>聯絡我們</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="back_top"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+
+            <div class="swiper mySwiper-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./picture/banner1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./picture/banner2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="members_introduction_1">
+            <div class="container">
+                <div class="dog_card">
+                    <img class="member_picture" src="./picture_pagination/menber_1.jpg" alt="">
+                    <div class="member_introduction_word">
+                        <h1 class="member_introduction_title">狗狗名字</h1>
+                        <h2 class="member_introduction_main">內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</h2>
+                    </div>
+                </div>
+                <div class="decorate">
+                    <img class="decorate1" src="./picture_pagination/mp1.png" alt="">
+                    <img class="decorate2" src="./picture_pagination/mp2.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="Copyright">Copyright © [year] [owner]. All rights reserved.</div>
+
+
+    </footer>
+
+
+
+<!-- ----------- -->
+
+ <!-- swiper -->
+
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+ <!-- banner-swiper -->
+ <script>
+     var swiper_banner = new Swiper(".mySwiper-banner", {
+         spaceBetween: 30,
+         effect: "fade",
+
+         autoplay: {
+             delay: 2500,
+             disableOnInteraction: false,
+         },
+         navigation: {
+             nextEl: ".swiper-button-next",
+             prevEl: ".swiper-button-prev",
+         },
+         pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+         },
+     });
+
+ </script>
+
+    
+</body>
+</html>
