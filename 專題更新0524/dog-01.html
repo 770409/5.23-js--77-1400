@@ -53,13 +53,22 @@
             <div class="swiper mySwiper-banner">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./picture/banner1.jpg" />
+                        <div class="one">
+
+                            <!-- <img src="./picture/banner1.jpg" /> -->
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./picture/banner2.jpg" />
+                        <div class="two">
+
+                            <!-- <img src="./picture/banner2.jpg" /> -->
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        <div class="three">
+
+                            <!-- <img src="https://swiperjs.com/demos/images/nature-3.jpg" /> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,6 +80,8 @@
             <div class="container">
                 <!-- 圖 -->
                 <div class="store_introduction_top">
+
+                    
                     <!-- 左 -->
                     <div class="store_introduction_word">
                         <h1>Store Introduction</h1>
@@ -85,8 +96,8 @@
                         </p>
                     </div>
                     <!-- 右 -->
-                    <!-- <div class="store_introduction_dog_house">
-                        <img src="./picture/狗屋.png" alt="">
+                    <div class="store_introduction_dog_house">
+ 
                         <div class="store_introduction_youtube">
                             <iframe 
                                 src="https://www.youtube.com/embed/oXNR6PlEa2A" title="YouTube video player"
@@ -95,7 +106,7 @@
                                 allowfullscreen></iframe>
                         </div>
 
-                    </div> -->
+                    </div>
 
                 </div>
 
@@ -563,6 +574,8 @@
     <script>
         let img_box = document.querySelector('#img_box');
         let img_box_mask = document.querySelector('.img_box_mask');
+        let nav = document.querySelector('nav');
+
         window.onscroll = function () {
             console.log("滾動");
             //safari (mac or iphone)
@@ -576,6 +589,8 @@
                 // box.classList.add("active");   
                 img_box_mask.classList.add("on");
             }
+
+
         };
     </script>
 

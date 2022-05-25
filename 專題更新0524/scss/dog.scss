@@ -81,14 +81,15 @@ body {
 
 // ---------------------------
 nav {
-    z-index: 10000;
+    z-index: 100000;
     width: 100%;
     height: 80px;
-    // background-color: #fff;
+    background-color: #fff;
+    opacity: .7;
     position: fixed;
 
     .container {
-        width: 1280px;
+        // width: 1280px;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -103,8 +104,10 @@ nav {
             height: 80px;
 
             .logo {
+                width: 80px;
                 height: 80px;
-                padding: 15px 0;
+                // padding: 15px 0;
+                padding: 5px 0;
             }
         }
 
@@ -155,13 +158,31 @@ main {
             height: 100%;
 
             .swiper-slide {
-                background-position: center;
-                background-size: cover;
-
-                img {
-                    display: block;
+               
+                width: 100%;
+                // height: 100%;
+                .one{
                     width: 100%;
+                    height: 100%;
+                    background-image: url(../picture/banner1.jpg);
+                    background-position: center;
+                    background-size: cover;
                 }
+                .two{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../picture/banner3.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .three{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../picture/banner3.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+
             }
         }
     }
@@ -170,50 +191,35 @@ main {
 
     //店家理念
     #store_introduction {
-        height: calc(100vh - 80px);
+        height:100vh;
         background-color: #E9E2E2;
 
         position: relative;
 
         .container {
-
+            height: 100%;
 
             .store_introduction_top {
-                display: flex;
-                // position: relative;
+                width: 100%;
+                height: 100%;
 
-                .store_introduction_word {
+                .store_introduction_word{
+
                     width: 50%;
-
-                    h1 {
-                        font-size: 48px;
+                    height: 50%;
+                    background-image: url(../picture/店家介紹左.svg);
+                    // background-color: #372714;
+                    background-size: contain;
+                    bgc
+                    h1{
+                        text-align: center;
                     }
 
-                    p {
-                        padding: 0 15px;
-                        font-size: 20px;
-                        line-height: 30px;
-                        letter-spacing: 9px;
-                    }
                 }
-
-                .store_introduction_dog_house {
-                    // padding: 0 15px;
-
+                .store_introduction_dog_house{
                     width: 50%;
-
-                    img {
-                        width: 100%;
-                    }
-
-                    .store_introduction_youtube {
-                        position: absolute;
-                        background-color: #6EA03B;
-                        width: 73%;
-                        height: 40%;
-
-                    }
-
+                    height: 50%;
+                    // background-color: #6EA03B;
                 }
 
             }
