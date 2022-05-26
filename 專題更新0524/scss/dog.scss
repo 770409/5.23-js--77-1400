@@ -142,6 +142,33 @@ nav {
         margin-left: 1785px;
     }
 }
+// nav碰到惹
+@media (max-width: 1280px) {
+    nav {
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        .container {
+            .menu_bar {
+                display: block;
+            }
+            // a{
+            //     .logo{
+
+            //     }
+            // }
+            .menu_main{
+                
+            }
+        }
+    }
+}
+
 
 
 // 主要區塊
