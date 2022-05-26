@@ -3,7 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   cursor: none;
-  background-color: #7b5c5c;
+  background-color: rgb(123, 92, 92);
 }
 
 @-webkit-keyframes cursorAnima {
@@ -29,10 +29,8 @@ body {
     opacity: 1;
   }
 }
-
 .cucursor_icon {
   border-radius: 50%;
   font-size: 20px;
   position: absolute;
-}
-/*# sourceMappingURL=mouse.css.map */
+}/*# sourceMappingURL=mouse.css.map */
