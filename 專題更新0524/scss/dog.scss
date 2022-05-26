@@ -88,7 +88,7 @@ nav {
     position: fixed;
 
     .container {
-        width: 1280px;
+        width: 75%;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -153,21 +153,44 @@ nav {
 main {
 
     #banner {
-
+        width: 100%;
         height: 100vh;
 
         .swiper {
             width: 100%;
             height: 100%;
 
-            .swiper-slide {
-                background-position: center;
-                background-size: cover;
+            .swiper-wrapper{
+                width: 100%;
+                height: 100%;
+                // img{
+                //     height: 100%;
 
-                img {
-                    display: block;
-                    width: 100%;
-                }
+                // }
+                
+                    .swiper-slide1 {
+                        width: 100%;
+                        height: 100%;
+                        
+                        background-position: center;
+                        background-size: cover;
+    
+                    }
+                    .swiper-slide2 {
+                        width: 100%;
+                        height: 100%;
+                       
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .swiper-slide3 {
+                        width: 100%;
+                        height: 100%;
+                        
+                        background-position: center;
+                        background-size: cover;
+                    }
+                
             }
         }
     }
@@ -899,7 +922,7 @@ main {
     #news {
         // overflow: hidden;
         position: relative;
-        height: calc(100vh + 500px);
+        height: calc(100vh + 800px);
         background-color: #F0ECEA;
 
         .foot {
@@ -987,6 +1010,7 @@ main {
                 position: absolute;
                 bottom: 0px;
                 width: 100%;
+
                 z-index: 2;
             }
 
@@ -1311,6 +1335,8 @@ footer {
         }
 
         #news {
+            height: 1500px;
+
             .news_propaganda {
                 .con2 {
                     .propaganda {
@@ -1328,7 +1354,8 @@ footer {
 
 
         #contact_us {
-
+            align-items: unset;
+            height: 2240px;
             // height: 100%;
             .container {
                 flex-direction: column;
@@ -1430,7 +1457,7 @@ footer {
 
         #members_introduction {
             .container {
-                height: 1200px;
+                height: 1480px;
 
                 .members_introduction_main {
                     // padding-bottom: 200px;
@@ -1463,7 +1490,7 @@ footer {
                         .btn-challenge {
                             left: 50%;
                             transform: translateX(-50%);
-                            bottom: -150px;
+                            bottom: -100px;
                         }
                     }
                 }
@@ -1532,9 +1559,9 @@ footer {
 // nav碰到惹
 @media (max-width: 1280px) {
     nav {
-        .container {
-            width: 100%;
-        }
+        // .container {
+        //     width: 100%;
+        // }
     }
 
     // 1280成員
@@ -1542,11 +1569,13 @@ footer {
 
         #members_introduction {
             .container {
-                height: 1200px;
+                height: 1300px;
 
                 .members_introduction_main {
                     // padding-bottom: 200px;
-
+                    .members_introduction_main_title{
+                        padding-bottom: 60px;
+                    }
                     .row {
                         height: 1000px;
                         flex-direction: column;
@@ -1555,7 +1584,7 @@ footer {
 
                         .mask {
                             width: 93%;
-                            height: 107%;
+                            height:100%;
                         }
 
                         .dog {
@@ -1563,7 +1592,7 @@ footer {
 
                             .dog_img {
                                 width: 100%;
-
+                                padding-top: 35px;
                                 .dog_img_box {
                                     width: calc(100% / 3);
                                 }
@@ -1651,14 +1680,27 @@ footer {
         }
 
 
+        #members_introduction {
+            .container {
+                height: 1300px;
 
+                .members_introduction_main {
+
+                    .members_introduction_main_title{
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
 
         #news {
             height: 2100px;
+
             .news_propaganda {
-                .grass{
+                .grass {
                     height: 400px;
                 }
+
                 .con2 {
                     .propaganda {
                         .propaganda_PM {
@@ -1678,10 +1720,44 @@ footer {
         }
     }
 }
+
 @media (max-width: 960px) {
     main {
+        #members_introduction {
+            .container {
+                .members_introduction_main {
+                    // padding-bottom: 200px;
+                    .members_introduction_main_title{
+                        padding-bottom: 40px;
+
+
+                    }
+                    .row {
+
+                        .mask {
+                            width: 93%;
+                            height: 80%;
+                        }
+
+                        .dog {
+                            .dog_img {
+                                padding: 0px;
+                                .dog_img_box {
+
+                                }
+                            }
+                        }
+                        .btn-challenge {
+                            bottom: -100px;
+                        }
+                    }
+                }
+            }
+        }
+
         #news {
             height: 2000px;
+
             .news_propaganda {
                 .con2 {
                     .propaganda {
@@ -1694,10 +1770,12 @@ footer {
                             .propaganda_main {
                                 bottom: 50px;
                                 right: 5%;
-                                .propaganda_title{
+
+                                .propaganda_title {
                                     font-size: 34px;
                                 }
-                                p{
+
+                                p {
                                     font-size: 14px;
                                 }
                             }
@@ -1707,12 +1785,35 @@ footer {
 
             }
         }
+
+
+
     }
 }
+
 @media (max-width: 850px) {
     main {
+
+        #members_introduction {
+            .container {
+                .members_introduction_main {
+                    // padding-bottom: 200px;
+                    .members_introduction_main_title{
+                        padding-bottom: 40px;
+                    }
+                    .row {
+
+                        .mask {
+                            width: 100%;
+                            height: 80%;
+                        }
+                    }
+                }
+            }
+        }
         #news {
             height: 1900px;
+
             .news_propaganda {
                 .con2 {
                     .propaganda {
@@ -1726,10 +1827,12 @@ footer {
                             .propaganda_main {
                                 bottom: 70px;
                                 right: 2%;
-                                .propaganda_title{
+
+                                .propaganda_title {
                                     font-size: 30px;
                                 }
-                                p{
+
+                                p {
                                     font-size: 12px;
                                 }
                             }
@@ -1769,8 +1872,51 @@ footer {
     }
 
     main {
+        #members_introduction {
+            
+            .container {
+                height: 1000px;
+                .members_introduction_main {
+                    // padding-bottom: 200px;
+                    .members_introduction_main_title{
+                        padding-bottom: 0px;
+                        position: relative;
+                        .dog_left{
+                            position: absolute;
+                            left: 35%;
+                            bottom: 45px;
+                            
+                        }
+                        .dog_right{
+                            position: absolute;
+                            right: 35%;
+                            bottom: 45px;
+                        }
+                    }
+                    .row {
+
+                        .mask {
+                            height: 50%;
+                        }
+
+                        .dog {
+                            .dog_img {
+                                height: 400px;
+                                .dog_img_box {
+
+                                }
+                            }
+                        }
+                        .btn-challenge {
+                            bottom: 100px;
+                        }
+                    }
+                }
+            }
+        }
         #news {
             height: 1850px;
+
             .news_propaganda {
                 .con2 {
                     .propaganda {
@@ -1784,10 +1930,12 @@ footer {
                             .propaganda_main {
                                 bottom: 60px;
                                 right: 2%;
-                                .propaganda_title{
+
+                                .propaganda_title {
                                     font-size: 30px;
                                 }
-                                p{
+
+                                p {
                                     font-size: 12px;
                                 }
                             }

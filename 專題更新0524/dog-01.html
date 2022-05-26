@@ -53,14 +53,17 @@
 
             <div class="swiper mySwiper-banner">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./picture/banner1.jpg" />
+                    <div class="swiper-slide swiper-slide1" style="background-image: url(./picture/banner1.jpg);">
+                        <!-- <div class=""></div> -->
+                        <!-- <img src="./picture/banner1.jpg" alt=""> -->
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./picture/banner2.jpg" />
+                    <div class="swiper-slide swiper-slide2" style="background-image: url(./picture/banner2.jpg);">
+                        <!-- <div class=""></div> -->
+                        <!-- <img src="./picture/banner2.jpg" alt=""> -->
                     </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    <div class="swiper-slide swiper-slide3" style="background-image: url(./picture/banner1.jpg);">
+                        <!-- <div class=""></div> -->
+                        <!-- <img src="./picture/banner1.jpg" alt=""> -->
                     </div>
                 </div>
             </div>
@@ -127,9 +130,9 @@
 
                 <div class="members_introduction_main" style="height: 100vh;">
                     <div class="members_introduction_main_title">
-                        <img src="./picture/按鈕狗狗2號.png" alt="">
+                        <img class="dog_left" src="./picture/按鈕狗狗2號.png" alt="">
                         <p>Members Introduction</p>
-                        <img src="./picture/按鈕狗狗1號.png" alt="">
+                        <img class="dog_right" src="./picture/按鈕狗狗1號.png" alt="">
                     </div>
 
 
@@ -466,6 +469,7 @@
     <!-- banner-swiper -->
     <script>
         var swiper_banner = new Swiper(".mySwiper-banner", {
+            lazy: true,
             spaceBetween: 30,
             effect: "fade",
 

@@ -48,7 +48,7 @@ nav {
 }
 
 nav .container {
-  width: 1280px;
+  width: 75%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +117,7 @@ nav .back_top {
 }
 
 main #banner {
+  width: 100%;
   height: 100vh;
 }
 
@@ -125,14 +126,30 @@ main #banner .swiper {
   height: 100%;
 }
 
-main #banner .swiper .swiper-slide {
+main #banner .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+main #banner .swiper .swiper-wrapper .swiper-slide1 {
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
 }
 
-main #banner .swiper .swiper-slide img {
-  display: block;
+main #banner .swiper .swiper-wrapper .swiper-slide2 {
   width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+main #banner .swiper .swiper-wrapper .swiper-slide3 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 main #store_introduction {
@@ -1446,7 +1463,7 @@ main #menu .menu_bg_img {
 
 main #news {
   position: relative;
-  height: calc(100vh + 500px);
+  height: calc(100vh + 800px);
   background-color: #F0ECEA;
 }
 
@@ -1871,9 +1888,18 @@ footer .Copyright {
   main #menu .menu_bg_img {
     width: 400px;
   }
+  main #news {
+    height: 1500px;
+  }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     bottom: 125px;
     right: 5%;
+  }
+  main #contact_us {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    height: 2240px;
   }
   main #contact_us .container {
     -webkit-box-orient: vertical;
@@ -1957,7 +1983,7 @@ footer .Copyright {
     left: 50%;
   }
   main #members_introduction .container {
-    height: 1200px;
+    height: 1480px;
   }
   main #members_introduction .container .members_introduction_main .row {
     height: 1200px;
@@ -1989,7 +2015,7 @@ footer .Copyright {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: -150px;
+    bottom: -100px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     bottom: 80px;
@@ -2029,11 +2055,11 @@ footer .Copyright {
 }
 
 @media (max-width: 1280px) {
-  nav .container {
-    width: 100%;
-  }
   main #members_introduction .container {
-    height: 1200px;
+    height: 1300px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title {
+    padding-bottom: 60px;
   }
   main #members_introduction .container .members_introduction_main .row {
     height: 1000px;
@@ -2049,13 +2075,14 @@ footer .Copyright {
   }
   main #members_introduction .container .members_introduction_main .row .mask {
     width: 93%;
-    height: 107%;
+    height: 100%;
   }
   main #members_introduction .container .members_introduction_main .row .dog {
     width: 100%;
   }
   main #members_introduction .container .members_introduction_main .row .dog .dog_img {
     width: 100%;
+    padding-top: 35px;
   }
   main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box {
     width: calc(100% / 3);
@@ -2092,6 +2119,12 @@ footer .Copyright {
     width: 500px;
     height: 350px;
   }
+  main #members_introduction .container {
+    height: 1300px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title {
+    padding-bottom: 40px;
+  }
   main #news {
     height: 2100px;
   }
@@ -2108,6 +2141,19 @@ footer .Copyright {
 }
 
 @media (max-width: 960px) {
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title {
+    padding-bottom: 40px;
+  }
+  main #members_introduction .container .members_introduction_main .row .mask {
+    width: 93%;
+    height: 80%;
+  }
+  main #members_introduction .container .members_introduction_main .row .dog .dog_img {
+    padding: 0px;
+  }
+  main #members_introduction .container .members_introduction_main .row .btn-challenge {
+    bottom: -100px;
+  }
   main #news {
     height: 2000px;
   }
@@ -2127,6 +2173,13 @@ footer .Copyright {
 }
 
 @media (max-width: 850px) {
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title {
+    padding-bottom: 40px;
+  }
+  main #members_introduction .container .members_introduction_main .row .mask {
+    width: 100%;
+    height: 80%;
+  }
   main #news {
     height: 1900px;
   }
@@ -2159,6 +2212,32 @@ footer .Copyright {
   }
   nav .container .menu_main {
     display: none;
+  }
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title {
+    padding-bottom: 0px;
+    position: relative;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    position: absolute;
+    left: 35%;
+    bottom: 45px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    position: absolute;
+    right: 35%;
+    bottom: 45px;
+  }
+  main #members_introduction .container .members_introduction_main .row .mask {
+    height: 50%;
+  }
+  main #members_introduction .container .members_introduction_main .row .dog .dog_img {
+    height: 400px;
+  }
+  main #members_introduction .container .members_introduction_main .row .btn-challenge {
+    bottom: 100px;
   }
   main #news {
     height: 1850px;
