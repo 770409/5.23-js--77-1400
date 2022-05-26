@@ -441,23 +441,31 @@ main {
                         width: 30%;
                         // width: 100%;
                         position: relative;
+                        height: 75%;
 
                         .dog_img {
                             display: flex;
                             align-items: center;
                             flex-wrap: wrap;
-                            width: 80%;
+                            width: 100%;
                             margin: 0 auto;
                             justify-content: space-between;
                             position: absolute;
                             right: 0px;
+                            height: 100%;
 
-                            img {
-                                border-radius: 50%;
-                                width: 140px;
-                                height: 140px;
-                                margin: 30px 0;
+                            .dog_img_box {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
 
+                                img {
+
+                                    border-radius: 50%;
+                                    width: 160px;
+                                    height: 160px;
+                                    margin: 0 auto;
+                                }
                             }
 
 
@@ -778,11 +786,11 @@ main {
     #menu {
 
         display: flex;
-        height: 100vh;
-        align-items: center;
+        height: 969px;
+        // align-items: center;
         background-color: #EFECE7;
         position: relative;
-
+        padding-top: 50px;
         // .on {
         //     right: -100%;
         //     transition-delay: 0.3s;
@@ -822,12 +830,13 @@ main {
         }
 
         .menu_right {
-            padding: 75px 0 0 90px;
-            align-self: flex-start;
+            // padding: 75px 0 0 90px;
+            // align-self: flex-start;
+            padding-left: 50px;
 
             .menu_text {
 
-                height: 70%;
+                // height: 50%;
                 z-index: 2;
 
                 h3 {
@@ -852,27 +861,28 @@ main {
                     font-size: 20px;
                     margin-bottom: 90px;
                 }
+
+                button {
+                    background-color: #AFCA82;
+                    padding: 5px 20px;
+                    border: 1px solid rgba(255, 255, 255, 0);
+                    border-radius: 15px;
+                    display: flex;
+
+                    span {
+                        font-size: 24px;
+                        color: rgb(255, 255, 255);
+                        line-height: 65px;
+                    }
+
+                    .menu_btn_img {
+                        height: 65px;
+                    }
+
+
+                }
             }
 
-            button {
-                background-color: #AFCA82;
-                padding: 5px 20px;
-                border: 1px solid rgba(255, 255, 255, 0);
-                border-radius: 15px;
-                display: flex;
-
-                span {
-                    font-size: 24px;
-                    color: rgb(255, 255, 255);
-                    line-height: 65px;
-                }
-
-                .menu_btn_img {
-                    height: 65px;
-                }
-
-
-            }
         }
 
         .menu_bg_img {
@@ -889,7 +899,7 @@ main {
     #news {
         // overflow: hidden;
         position: relative;
-        height: 1800px;
+        height: calc(100vh + 500px);
         background-color: #F0ECEA;
 
         .foot {
@@ -900,7 +910,7 @@ main {
 
         .container {
             margin-bottom: 57px;
-            padding-top: 157px;
+            padding-top: 50px;
 
             .news_show {
                 h1 {
@@ -971,8 +981,6 @@ main {
         }
 
         .news_propaganda {
-            // position: relative;
-            // bottom: 0px;
             width: 100%;
 
             .grass {
@@ -986,22 +994,25 @@ main {
                 position: absolute;
                 // top: 0px;
                 bottom: 0px;
-                width: 70%;
-                margin: 0 calc((100% - 1280px) / 2);
+                width: 100%;
+
 
                 .propaganda {
                     width: 100%;
+
 
                     .propaganda_PM {
                         display: flex;
                         width: 100%;
                         justify-content: space-between;
-
+                        position: relative;
+                        // margin: 0 auto;
 
                         .propaganda_picture {
-                            width: 40%;
-                            margin-bottom: -100px;
-                            margin-left: -86px;
+                            width: 30%;
+                            position: absolute;
+                            bottom: -120px;
+                            left: 12%;
                             z-index: 5;
                         }
 
@@ -1011,6 +1022,9 @@ main {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
+                            position: absolute;
+                            bottom: 200px;
+                            right: 300px;
 
                             .propaganda_title {
                                 font-size: 44px;
@@ -1196,10 +1210,9 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // padding: 0 50px;
+                margin-left: 50px;
 
                 .map_box {
-                    margin-left: 50px;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
@@ -1214,8 +1227,6 @@ main {
                         .map_1 {
                             height: 167px;
                             width: 300px;
-
-
                         }
                     }
 
@@ -1231,8 +1242,6 @@ main {
 
             .information_right {
                 width: 100%;
-                //    position: absolute;
-                //    right: 0px;
                 display: flex;
                 justify-content: end;
                 align-items: center;
@@ -1290,6 +1299,33 @@ footer {
                 }
             }
         }
+
+
+        #menu {
+
+            .menu_right {}
+
+            .menu_bg_img {
+                width: 400px;
+            }
+        }
+
+        #news {
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_main {
+                                bottom: 125px;
+                                right: 5%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
 
         #contact_us {
 
@@ -1360,7 +1396,7 @@ footer {
 
 
                     .store_introduction_bg1 {
-                        background-image: url(../picture/store_introduction/上!.svg);
+                        background-image: url(../picture/store_introduction/上.svg);
                         width: 100%;
                         height: 700px;
 
@@ -1374,7 +1410,7 @@ footer {
 
                     .store_introduction_bg2 {
 
-                        background-image: url(../picture/store_introduction/下!.svg);
+                        background-image: url(../picture/store_introduction/下.svg);
                         width: 100%;
                         height: 700px;
 
@@ -1387,24 +1423,111 @@ footer {
                     }
                 }
             }
+
         }
-        #menu{
-            height: 1240px;
+
+        // 1400成員
+
+        #members_introduction {
+            .container {
+                height: 1200px;
+
+                .members_introduction_main {
+                    // padding-bottom: 200px;
+
+                    .row {
+                        height: 1200px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        .mask {
+                            width: 93%;
+                            height: 107%;
+                        }
+
+                        .dog {
+                            width: 100%;
+
+                            .dog_img {
+                                width: 100%;
+                                padding: 0 100px;
+
+                                .dog_img_box {
+                                    width: calc(100% / 3);
+                                }
+                            }
+
+                        }
+
+                        .btn-challenge {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -150px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 1400 news
+        #news {
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_main {
+                                bottom: 80px;
+                                right: 10%;
+
+                                .propaganda_title {
+                                    font-size: 38px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        // 1400菜單
+        #menu {
+            height: 1200px;
             flex-direction: column;
             align-items: none;
-            #img_box{
+            padding-top: 0px;
+            padding-bottom: 100px;
+
+            #img_box {
                 width: 100%;
-                height:100%;
+                height: 100%;
             }
-            .menu_right{
+
+            .menu_right {
                 padding: 35px 0 0 90px;
-                align-self:none;
+                align-self: none;
+
+
+
+                .menu_text {
+                    ul {
+                        margin-bottom: 40px;
+                    }
+
+                }
+
+
+                .menu_bg_img {
+                    width: 400px;
+                }
 
             }
         }
-    }
 
+    }
 }
+
 
 // nav碰到惹
 @media (max-width: 1280px) {
@@ -1413,10 +1536,213 @@ footer {
             width: 100%;
         }
     }
-}
-// @media (max-width: 1200px){
 
-// }
+    // 1280成員
+    main {
+
+        #members_introduction {
+            .container {
+                height: 1200px;
+
+                .members_introduction_main {
+                    // padding-bottom: 200px;
+
+                    .row {
+                        height: 1000px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        .mask {
+                            width: 93%;
+                            height: 107%;
+                        }
+
+                        .dog {
+                            width: 100%;
+
+                            .dog_img {
+                                width: 100%;
+
+                                .dog_img_box {
+                                    width: calc(100% / 3);
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #news {
+            height: 2300px;
+
+            .container {
+
+                .news_show {
+                    .cardBox {
+                        flex-wrap: wrap;
+
+                        .card1 {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
+                                width: 35%;
+
+                                left: 7%;
+                            }
+
+                            .propaganda_main {
+                                bottom: 70px;
+                                right: 10%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+
+
+}
+
+
+@media (max-width: 1100px) {
+    main {
+
+        #store_introduction {
+            .container {
+                .store_introduction_top {
+
+                    .store_introduction_bg1 {
+                        .store_introduction_word {
+                            padding: 90px 0 40px;
+
+                            p {
+                                letter-spacing: 3px;
+                                padding: 0px;
+                            }
+                        }
+                    }
+
+                    .store_introduction_bg2 {
+                        .store_introduction_youtube {
+                            width: 500px;
+                            height: 350px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        #news {
+            height: 2100px;
+            .news_propaganda {
+                .grass{
+                    height: 400px;
+                }
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
+                                bottom: -95px;
+                            }
+
+                            .propaganda_main {
+                                bottom: 50px;
+                                right: 5%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    main {
+        #news {
+            height: 2000px;
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
+                                bottom: -95px;
+                                // width: 40%;
+                            }
+
+                            .propaganda_main {
+                                bottom: 50px;
+                                right: 5%;
+                                .propaganda_title{
+                                    font-size: 34px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    main {
+        #news {
+            height: 1900px;
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
+                                bottom: -85px;
+                                width: 40%;
+                                left: 3%;
+                            }
+
+                            .propaganda_main {
+                                bottom: 70px;
+                                right: 2%;
+                                .propaganda_title{
+                                    font-size: 30px;
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
 
 @media (max-width: 768px) {
     nav {
@@ -1437,6 +1763,37 @@ footer {
 
             .menu_main {
                 display: none;
+
+            }
+        }
+    }
+
+    main {
+        #news {
+            height: 1850px;
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
+                                bottom: -80px;
+                                width: 40%;
+                                left: 3%;
+                            }
+
+                            .propaganda_main {
+                                bottom: 60px;
+                                right: 2%;
+                                .propaganda_title{
+                                    font-size: 30px;
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
 
             }
         }
