@@ -50,6 +50,7 @@ nav .container {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+  position: relative;
 }
 nav .container .menu_bar {
   display: none;
@@ -91,16 +92,6 @@ nav .back_top {
   margin-left: 1785px;
 }
 
-@media (max-width: 1280px) {
-  nav .container {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  nav .container .menu_bar {
-    display: block;
-  }
-}
 main #banner {
   height: 100vh;
 }
@@ -117,7 +108,7 @@ main #banner .swiper .swiper-slide img {
   width: 100%;
 }
 main #store_introduction {
-  height: 1080px;
+  height: 100vh;
   background-color: #E9E2E2;
   overflow: hidden;
   position: relative;
@@ -131,7 +122,7 @@ main #store_introduction .container .store_introduction_top {
   justify-content: space-between;
 }
 main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
-  width: 700px;
+  width: 50%;
   background-image: url(../picture/店家介紹左.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -140,6 +131,7 @@ main #store_introduction .container .store_introduction_top .store_introduction_
 main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
   width: 100%;
   padding: 130px 0 40px;
+  margin: 0 auto;
 }
 main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
   font-size: 44px;
@@ -155,7 +147,7 @@ main #store_introduction .container .store_introduction_top .store_introduction_
   color: #4A312A;
 }
 main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
-  width: 700px;
+  width: 50%;
   background-image: url(../picture/店家介紹右.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -198,7 +190,7 @@ main #store_introduction .container .store_introduction_down .grass4 {
     bottom: -60px;
   }
   100% {
-    right: 600px;
+    right: 28%;
     bottom: -80px;
   }
 }
@@ -207,7 +199,7 @@ main #store_introduction .container .store_introduction_down .grass4 {
     bottom: -60px;
   }
   100% {
-    right: 600px;
+    right: 28%;
     bottom: -80px;
   }
 }
@@ -972,7 +964,7 @@ main #news .news_propaganda .grass {
 main #news .news_propaganda .con2 {
   position: absolute;
   bottom: 0px;
-  width: 1280px;
+  width: 70%;
   margin: 0 calc((100% - 1280px) / 2);
 }
 main #news .news_propaganda .con2 .propaganda {
@@ -1123,7 +1115,7 @@ main #contact_us .container .information_left .contact_us_information button.big
   box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
 }
 main #contact_us .container .information_map {
-  width: 300px;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1138,19 +1130,20 @@ main #contact_us .container .information_map .map_box {
 }
 main #contact_us .container .information_map .map_box .map_img {
   height: 181px;
+  z-index: 8;
 }
 main #contact_us .container .information_map .map_box .map_img .map_1 {
   height: 167px;
   width: 300px;
-  z-index: 1;
 }
 main #contact_us .container .information_map .map_box .maps {
-  margin-top: -36px;
+  margin-top: -40px;
   width: 350px;
   height: 280px;
+  z-index: 5;
 }
 main #contact_us .container .information_right {
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -1169,4 +1162,114 @@ footer .Copyright {
   letter-spacing: 5px;
   padding: 0 20px 20px 0;
   font-size: 14px;
+}
+
+@media (max-width: 1600px) {
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
+    padding: 90px 0 40px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 3px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    width: 500px;
+    height: 350px;
+  }
+  main #contact_us .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #contact_us .container .conma {
+    margin-top: 50px;
+  }
+  main #contact_us .container .information_map {
+    width: 100%;
+  }
+  main #contact_us .container .information_map .map_box {
+    margin: 0px;
+  }
+  main #contact_us .container .information_map .map_box .map_img {
+    width: 500px;
+    height: 300px;
+  }
+  main #contact_us .container .information_map .map_box .map_img .map_1 {
+    width: 100%;
+    height: 100%;
+  }
+  main #contact_us .container .information_map .map_box .maps {
+    width: 550px;
+    height: 480px;
+  }
+  main #contact_us .container .information_right {
+    height: 500px;
+    justify-content: center;
+  }
+  main #contact_us .container .information_right .social_media {
+    height: 500px;
+  }
+}
+@media (max-width: 1400px) {
+  main #store_introduction {
+    height: 1770px;
+  }
+  main #store_introduction .container {
+    height: 100%;
+  }
+  main #store_introduction .container .store_introduction_top {
+    flex-direction: column;
+    width: 100%;
+    justify-content: none;
+    align-items: center;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    background-image: url(../picture/store_introduction/上!.svg);
+    width: 100%;
+    height: 700px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
+    width: 70%;
+    padding: 180px 15px 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    background-image: url(../picture/store_introduction/下!.svg);
+    width: 100%;
+    height: 700px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    width: 600px;
+    height: 350px;
+    top: 15%;
+    left: 50%;
+  }
+  main #menu {
+    height: 1240px;
+    flex-direction: column;
+    align-items: none;
+  }
+  main #menu #img_box {
+    width: 100%;
+    height: 100%;
+  }
+  main #menu .menu_right {
+    padding: 35px 0 0 90px;
+    align-self: none;
+  }
+}
+@media (max-width: 1280px) {
+  nav .container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  nav .container .menu_bar {
+    display: block;
+  }
+  nav .container a .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  nav .container .menu_main {
+    display: none;
+  }
 }/*# sourceMappingURL=dog.css.map */

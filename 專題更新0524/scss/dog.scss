@@ -93,6 +93,7 @@ nav {
         display: flex;
         justify-content: space-between;
         padding: 0 15px;
+        position: relative;
 
         .menu_bar {
             display: none;
@@ -145,32 +146,6 @@ nav {
         margin-left: 1785px;
     }
 }
-// nav碰到惹
-@media (max-width: 1280px) {
-    nav {
-        .container {
-            width: 100%;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        .container {
-            .menu_bar {
-                display: block;
-            }
-            // a{
-            //     .logo{
-
-            //     }
-            // }
-            .menu_main{
-                
-            }
-        }
-    }
-}
 
 
 
@@ -201,7 +176,7 @@ main {
 
     //店家理念
     #store_introduction {
-        height: 1080px;
+        height: 100vh;
         background-color: #E9E2E2;
         overflow: hidden;
         position: relative;
@@ -219,8 +194,9 @@ main {
                 padding-top: 82px;
                 // display: flex;
                 justify-content: space-between;
+
                 .store_introduction_bg1 {
-                    width: 700px;
+                    width: 50%;
                     background-image: url(../picture/店家介紹左.svg);
                     background-position: center;
                     background-repeat: no-repeat;
@@ -230,6 +206,7 @@ main {
                     .store_introduction_word {
                         width: 100%;
                         padding: 130px 0 40px;
+                        margin: 0 auto;
 
                         h1 {
                             font-size: 44px;
@@ -249,7 +226,7 @@ main {
                 }
 
                 .store_introduction_bg2 {
-                    width: 700px;
+                    width: 50%;
                     background-image: url(../picture/店家介紹右.svg);
                     background-position: center;
                     background-repeat: no-repeat;
@@ -275,7 +252,7 @@ main {
             }
 
             .store_introduction_down {
-                
+
                 .store_introduction_cute {
                     transform: rotateY(180deg);
                     width: 600px;
@@ -283,9 +260,10 @@ main {
                     bottom: -80px;
                     right: -600px;
                     z-index: 2;
-                    
+
                 }
-                .runrun{
+
+                .runrun {
                     animation: doggo 5s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
                 }
 
@@ -298,15 +276,14 @@ main {
                 }
 
                 @keyframes doggo {
-                    0%{
+                    0% {}
 
-                    }
                     50% {
                         bottom: -60px;
                     }
 
                     100% {
-                        right: 600px;
+                        right: 28%;
                         bottom: -80px;
 
                     }
@@ -368,13 +345,14 @@ main {
                         width: 70%;
                         height: 75%;
                         position: relative;
+
                         // .icon_two{
                         //     position: absolute;
                         //     right: 0px;
                         // }
                         .mask_border {
                             position: absolute;
-                            
+
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
@@ -388,7 +366,7 @@ main {
                                 // height: 100%;
                             }
                         }
-                        
+
                         .direction {
                             position: relative;
                             width: 100%;
@@ -397,7 +375,7 @@ main {
                             -webkit-mask-size: contain;
                             -webkit-mask-repeat: no-repeat;
                             -webkit-mask-position: center;
-                            
+
                             .dogg {
                                 // object-fit: cover;
                                 width: 100%;
@@ -1008,7 +986,7 @@ main {
                 position: absolute;
                 // top: 0px;
                 bottom: 0px;
-                width: 1280px;
+                width: 70%;
                 margin: 0 calc((100% - 1280px) / 2);
 
                 .propaganda {
@@ -1104,6 +1082,7 @@ main {
                     align-items: center;
                     justify-content: center;
                     position: relative;
+
                     .information_title {
                         // position: relative;
 
@@ -1213,7 +1192,7 @@ main {
             }
 
             .information_map {
-                width: 300px;
+                width: 500px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1230,25 +1209,28 @@ main {
                     // padding: 0 20px;
                     .map_img {
                         height: 181px;
+                        z-index: 8;
 
                         .map_1 {
                             height: 167px;
                             width: 300px;
-                            z-index: 1;
+
+
                         }
                     }
 
                     .maps {
-                        margin-top: -36px;
+                        margin-top: -40px;
                         width: 350px;
                         height: 280px;
+                        z-index: 5;
                     }
 
                 }
             }
 
             .information_right {
-                width: 30%;
+                width: 100%;
                 //    position: absolute;
                 //    right: 0px;
                 display: flex;
@@ -1278,4 +1260,185 @@ footer {
         font-size: 14px;
     }
 
+}
+
+// =============
+@media (max-width: 1600px) {
+    main {
+
+
+        #store_introduction {
+            .container {
+                .store_introduction_top {
+
+                    .store_introduction_bg1 {
+                        .store_introduction_word {
+                            padding: 90px 0 40px;
+
+                            p {
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+
+                    .store_introduction_bg2 {
+                        .store_introduction_youtube {
+                            width: 500px;
+                            height: 350px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #contact_us {
+
+            // height: 100%;
+            .container {
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
+
+                .conma {
+                    margin-top: 50px;
+                }
+
+                .information_map {
+                    width: 100%;
+
+                    .map_box {
+                        margin: 0px;
+
+                        .map_img {
+                            width: 500px;
+                            height: 300px;
+
+                            .map_1 {
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                        }
+
+                        .maps {
+                            width: 550px;
+                            height: 480px;
+                        }
+                    }
+                }
+
+                .information_right {
+                    height: 500px;
+
+                    justify-content: center;
+
+                    .social_media {
+                        height: 500px;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1400px) {
+    main {
+
+        #store_introduction {
+            height: 1770px;
+
+            .container {
+                height: 100%;
+
+                .store_introduction_top {
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: none;
+                    align-items: center;
+
+
+                    .store_introduction_bg1 {
+                        background-image: url(../picture/store_introduction/上!.svg);
+                        width: 100%;
+                        height: 700px;
+
+                        .store_introduction_word {
+                            width: 70%;
+                            padding: 180px 15px 0px;
+
+
+                        }
+                    }
+
+                    .store_introduction_bg2 {
+
+                        background-image: url(../picture/store_introduction/下!.svg);
+                        width: 100%;
+                        height: 700px;
+
+                        .store_introduction_youtube {
+                            width: 600px;
+                            height: 350px;
+                            top: 15%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #menu{
+            height: 1240px;
+            flex-direction: column;
+            align-items: none;
+            #img_box{
+                width: 100%;
+                height:100%;
+            }
+            .menu_right{
+                padding: 35px 0 0 90px;
+                align-self:none;
+
+            }
+        }
+    }
+
+}
+
+// nav碰到惹
+@media (max-width: 1280px) {
+    nav {
+        .container {
+            width: 100%;
+        }
+    }
+}
+// @media (max-width: 1200px){
+
+// }
+
+@media (max-width: 768px) {
+    nav {
+        .container {
+            .menu_bar {
+                display: block;
+            }
+
+            a {
+                .logo {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+
+                }
+            }
+
+            .menu_main {
+                display: none;
+
+            }
+        }
+    }
 }
