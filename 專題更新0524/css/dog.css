@@ -208,13 +208,13 @@ body {
   opacity: 0;
   pointer-events: none;
   text-decoration: none;
-  color: #000;
+  color: black;
   top: 50%;
   left: 100%;
-  margin-left: 4vh;
+  margin-left: 2vh;
   white-space: nowrap;
   margin-top: -0.5em;
-  font-size: 4vh;
+  font-size: 38px;
   -webkit-transform: translate(-25%);
           transform: translate(-25%);
   -webkit-transition: 500ms ease all;
@@ -474,7 +474,7 @@ main #store_introduction .container .store_introduction_down .store_introduction
   width: 600px;
   position: absolute;
   bottom: -80px;
-  right: -600px;
+  right: -100%;
   z-index: 2;
 }
 
@@ -484,7 +484,7 @@ main #store_introduction .container .store_introduction_down .runrun {
 }
 
 main #store_introduction .container .store_introduction_down .grass4 {
-  width: 100%;
+  width: 1920px;
   height: 100px;
   position: absolute;
   bottom: 0px;
@@ -492,26 +492,14 @@ main #store_introduction .container .store_introduction_down .grass4 {
 }
 
 @-webkit-keyframes doggo {
-  0% {
-  }
-  50% {
-    bottom: -60px;
-  }
   100% {
-    right: 28%;
-    bottom: -80px;
+    right: calc(50% - 300px);
   }
 }
 
 @keyframes doggo {
-  0% {
-  }
-  50% {
-    bottom: -60px;
-  }
   100% {
-    right: 28%;
-    bottom: -80px;
+    right: calc(50% - 300px);
   }
 }
 
@@ -543,7 +531,7 @@ main #members_introduction .container .members_introduction_main .members_introd
   text-align: center;
   margin: 0px;
   font-size: 48px;
-  color: white;
+  color: #988870;
   margin: 0 20px;
 }
 
@@ -597,27 +585,23 @@ main #members_introduction .container .members_introduction_main .row .mask .dir
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_1 {
-  background-image: url(../picture/banner2.jpg);
+  background-image: url(../picture/member/dogg_1.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_2 {
-  background-image: url(../picture/banner1.jpg);
+  background-image: url(../picture/member/dogg_2.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_3 {
-  background-image: url(../picture/banner2.jpg);
+  background-image: url(../picture/member/dogg_3.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_4 {
-  background-image: url(../picture/banner2.jpg);
+  background-image: url(../picture/member/dogg_4.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_5 {
-  background-image: url(../picture/banner2.jpg);
-}
-
-main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_6 {
-  background-image: url(../picture/banner2.jpg);
+  background-image: url(../picture/member/dogg_5.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .active {
@@ -1734,7 +1718,6 @@ main #news .container .news_show .cardBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1742,6 +1725,7 @@ main #news .container .news_show .cardBox {
 }
 
 main #news .container .news_show .cardBox .card1 {
+  position: relative;
   width: 25%;
   padding: 20px 20px 55px;
 }
@@ -1818,7 +1802,7 @@ main #news .news_propaganda .con2 .propaganda .propaganda_PM {
 main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
   width: 30%;
   position: absolute;
-  bottom: -120px;
+  bottom: -150px;
   left: 12%;
   z-index: 5;
 }
@@ -2041,7 +2025,7 @@ main #contact_us .container .information_map {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 main #contact_us .container .information_map .map_box {
@@ -2387,6 +2371,13 @@ footer .Copyright {
 }
 
 @media (max-width: 960px) {
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
+    padding: 140px 0 40px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    width: 500px;
+    height: 350px;
+  }
   main #members_introduction .container .members_introduction_main .members_introduction_main_title {
     padding-bottom: 40px;
   }
@@ -2466,6 +2457,13 @@ footer .Copyright {
   nav .container .menu_main {
     display: none;
   }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
+    width: 88%;
+  }
+  main #store_introduction .container .store_introduction_down .store_introduction_cute {
+    width: 400px;
+    bottom: -55px;
+  }
   main #members_introduction .container {
     height: 1000px;
   }
@@ -2509,6 +2507,79 @@ footer .Copyright {
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     font-size: 12px;
+  }
+  main #menu .menu_bg_img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 687px) {
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .row .mask {
+    height: 50%;
+  }
+  main #members_introduction .container .members_introduction_main .row .dog .dog_img {
+    height: 400px;
+  }
+  main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box .dogX {
+    width: 120px;
+    height: 120px;
+  }
+  main #members_introduction .container .members_introduction_main .row .btn-challenge {
+    bottom: 100px;
+  }
+  main #news {
+    height: 3600px;
+  }
+  main #news .container .news_show .cardBox .card1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 610px) {
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    font-size: 32px;
+    margin-bottom: -50px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 35%;
+    bottom: 0px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 35%;
+    bottom: 0px;
+  }
+  main #menu {
+    height: 950px;
+  }
+  main #menu #img_box {
+    height: 55%;
+  }
+  main #menu .menu_right {
+    padding: 10px 10px;
+  }
+  main #menu .menu_bg_img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    font-size: 28px;
   }
 }
 /*# sourceMappingURL=dog.css.map */

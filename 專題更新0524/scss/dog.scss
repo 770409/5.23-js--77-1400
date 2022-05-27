@@ -102,7 +102,7 @@ body {
     $ref: &;
     transform-style: preserve-3d;
     perspective: 2000px;
-    height:70px;
+    height: 70px;
     aspect-ratio: 1/1;
 
     &__ingredients {
@@ -122,7 +122,7 @@ body {
         transition: $transition;
         border-radius: 50%;
 
-        
+
         &:before {
             content: "";
             position: absolute;
@@ -136,7 +136,8 @@ body {
             transition: $transition;
             box-shadow: inset 0 6vh;
         }
-        &:after{
+
+        &:after {
             content: "";
             position: absolute;
             top: 45%;
@@ -177,6 +178,7 @@ body {
         transition: $transition;
         transition-delay: 250ms;
 
+
         @for $i from 0 to 7 {
             &:nth-child(#{$i}) {
                 transform: translateZ($i * -5vh);
@@ -208,16 +210,17 @@ body {
             opacity: 0;
             pointer-events: none;
             text-decoration: none;
-            color: #000;
+            color: rgb(0, 0, 0);
             top: 50%;
             left: 100%;
-            margin-left: 4vh;
+            margin-left: 2vh;
             white-space: nowrap;
             margin-top: -0.5em;
-            font-size: 4vh;
+            font-size: 38px;
             transform: translate(-25%);
             transition: $transition;
             transition-delay: 0ms;
+
         }
     }
 
@@ -265,13 +268,14 @@ body {
         }
     }
 }
+
 nav {
     z-index: 10000;
     width: 100%;
     height: 80px;
 
     position: fixed;
-   
+
 
     .container {
         width: 75%;
@@ -281,7 +285,7 @@ nav {
         padding: 0 15px;
         position: relative;
 
-        
+
 
         // .menu_bar {
         //     // display: none;
@@ -468,22 +472,28 @@ main {
 
             .store_introduction_down {
 
+
                 .store_introduction_cute {
                     transform: rotateY(180deg);
                     width: 600px;
                     position: absolute;
                     bottom: -80px;
-                    right: -600px;
+
+                    right: -100%;
+
+                    // transform: translateX(-50%);
                     z-index: 2;
 
                 }
 
                 .runrun {
                     animation: doggo 5s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+                    // right: 50%;
+                    // transition-delay: 0.3s;
                 }
 
                 .grass4 {
-                    width: 100%;
+                    width: 1920px;
                     height: 100px;
                     position: absolute;
                     bottom: 0px;
@@ -491,27 +501,13 @@ main {
                 }
 
                 @keyframes doggo {
-                    0% {}
-
-                    50% {
-                        bottom: -60px;
-                    }
-
                     100% {
-                        right: 28%;
-                        bottom: -80px;
+                        right: calc(50% - 300px);
 
                     }
-
                 }
             }
-
         }
-
-
-
-
-
     }
 
 
@@ -543,7 +539,7 @@ main {
                         text-align: center;
                         margin: 0px;
                         font-size: 48px;
-                        color: rgb(255, 255, 255);
+                        color: #988870;
                         margin: 0 20px;
                     }
                 }
@@ -603,28 +599,26 @@ main {
                             }
 
                             .dogg_1 {
-                                background-image: url(../picture/banner2.jpg);
+                                background-image: url(../picture/member/dogg_1.jpg);
                             }
 
                             .dogg_2 {
-                                background-image: url(../picture/banner1.jpg);
+                                background-image: url(../picture/member/dogg_2.jpg);
                             }
 
                             .dogg_3 {
-                                background-image: url(../picture/banner2.jpg);
+                                background-image: url(../picture/member/dogg_3.jpg);
                             }
 
                             .dogg_4 {
-                                background-image: url(../picture/banner2.jpg);
+                                background-image: url(../picture/member/dogg_4.jpg);
                             }
 
                             .dogg_5 {
-                                background-image: url(../picture/banner2.jpg);
+                                background-image: url(../picture/member/dogg_5.jpg);
                             }
 
-                            .dogg_6 {
-                                background-image: url(../picture/banner2.jpg);
-                            }
+
 
                             .active {
                                 // width: 100%;
@@ -1140,13 +1134,14 @@ main {
 
                 .cardBox {
                     display: flex;
-                    position: relative;
+                    
                     justify-content: space-between;
                     padding-top: 38px;
                     // overflow: hidden;
 
 
                     .card1 {
+                        position: relative;
                         width: 25%;
                         padding: 20px 20px 55px;
 
@@ -1227,7 +1222,7 @@ main {
                         .propaganda_picture {
                             width: 30%;
                             position: absolute;
-                            bottom: -120px;
+                            bottom: -150px;
                             left: 12%;
                             z-index: 5;
                         }
@@ -1426,7 +1421,7 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: 50px;
+                margin-left: 100px;
 
                 .map_box {
                     width: 100%;
@@ -1752,11 +1747,7 @@ footer {
 
 // nav碰到惹
 @media (max-width: 1280px) {
-    nav {
-        // .container {
-        //     width: 100%;
-        // }
-    }
+
 
     // 1280成員
     main {
@@ -1880,6 +1871,7 @@ footer {
                         }
                     }
                 }
+
             }
         }
 
@@ -1927,6 +1919,33 @@ footer {
 
 @media (max-width: 960px) {
     main {
+        #store_introduction {
+            .container {
+                .store_introduction_top {
+
+                    .store_introduction_bg1 {
+                        .store_introduction_word {
+                            padding: 140px 0 40px;
+
+                            // p {
+                            //     
+                            // }
+                        }
+                    }
+
+                    .store_introduction_bg2 {
+                        .store_introduction_youtube {
+                            width: 500px;
+                            height: 350px;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
         #members_introduction {
             .container {
                 .members_introduction_main {
@@ -2058,12 +2077,12 @@ footer {
 
 @media (max-width: 768px) {
 
-    #burger-menu-checkbox{
+    #burger-menu-checkbox {
         display: block;
     }
 
-    .burger-menu{
-    display: block;
+    .burger-menu {
+        display: block;
     }
 
 
@@ -2097,6 +2116,29 @@ footer {
     }
 
     main {
+        #store_introduction {
+            .container {
+                .store_introduction_top {
+                    .store_introduction_bg1 {
+
+                        .store_introduction_word {
+                            // padding: 90px 0 40px;
+                            width: 88%;
+                        }
+                    }
+                }
+
+                .store_introduction_down {
+                    .store_introduction_cute {
+                        width: 400px;
+                        bottom: -55px;
+                    }
+
+                }
+
+            }
+        }
+
         #members_introduction {
 
             .container {
@@ -2133,7 +2175,12 @@ footer {
                             .dog_img {
                                 height: 400px;
 
-                                .dog_img_box {}
+                                // .dog_img_box {
+                                //     .dog{
+
+                                //     }
+
+                                // }
                             }
                         }
 
@@ -2147,6 +2194,15 @@ footer {
 
         #news {
             height: 1850px;
+            .container{
+                .news_show{
+                    .cardBox{
+                        .card1{
+
+                        }
+                    }
+                }
+            }
 
             .news_propaganda {
                 .con2 {
@@ -2172,6 +2228,217 @@ footer {
                             }
                         }
                     }
+                }
+
+            }
+        }
+
+        #menu {
+
+            .menu_bg_img {
+                width: 300px;
+            }
+
+        }
+    }
+}
+
+@media (max-width:687px) {
+    main {
+        #members_introduction {
+
+            .container {
+                height: 1000px;
+
+                .members_introduction_main {
+
+
+
+                    .row {
+
+                        .mask {
+                            height: 50%;
+                        }
+
+                        .dog {
+                            .dog_img {
+                                height: 400px;
+
+                                .dog_img_box {
+                                    .dogX {
+                                        width: 120px;
+                                        height: 120px;
+
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .btn-challenge {
+                            bottom: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #news {
+            height: 3600px;
+
+            .container {
+                .news_show {
+                    .cardBox {
+                        .card1 {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+
+}
+
+@media (max-width:610px) {
+    main {
+        #members_introduction {
+
+            .container {
+                height: 1000px;
+
+                .members_introduction_main {
+                    .members_introduction_main_title {
+                        p {
+                            font-size: 32px;
+                            margin-bottom: -50px;
+                        }
+
+                        .dog_left {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            left: 35%;
+                            bottom: 0px;
+
+                        }
+
+                        .dog_right {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            right: 35%;
+                            bottom: 0px;
+                        }
+                    }
+
+                    // .row {
+
+                    //     .mask {
+                    //         height: 50%;
+                    //     }
+
+                    //     .dog {
+                    //         .dog_img {
+                    //             height: 400px;
+
+                    //             .dog_img_box {}
+                    //         }
+                    //     }
+
+                    //     .btn-challenge {
+                    //         bottom: 100px;
+                    //     }
+                    // }
+                }
+            }
+        }
+        #menu {
+            height: 950px;
+            #img_box{
+                height: 55%;
+            }
+            .menu_right{
+                padding: 10px 10px;
+                
+            }
+            .menu_bg_img {
+                width: 300px;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width:425px) {
+    main {
+        #members_introduction {
+
+            .container {
+                height: 1000px;
+
+                .members_introduction_main {
+                    .members_introduction_main_title {
+                        p {
+                            font-size: 28px;
+                        }
+
+                    }
+
+                    // .row {
+
+                    //     .mask {
+                    //         height: 50%;
+                    //     }
+
+                    //     .dog {
+                    //         .dog_img {
+                    //             height: 400px;
+
+                    //             .dog_img_box {}
+                    //         }
+                    //     }
+
+                    //     .btn-challenge {
+                    //         bottom: 100px;
+                    //     }
+                    // }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:376px) {
+    main {
+        #store_introduction {
+            .container {
+                .store_introduction_top {
+
+                    // .store_introduction_bg1 {
+                    //     .store_introduction_word {
+                    //         padding: 90px 0 40px;
+
+                    //         p {
+                    //             letter-spacing: 3px;
+                    //             padding: 0px;
+                    //         }
+                    //     }
+                    // }
+
+                    // .store_introduction_bg2 {
+                    //     .store_introduction_youtube {
+                    //         width: 500px;
+                    //         height: 350px;
+                    //     }
+                    // }
                 }
 
             }
