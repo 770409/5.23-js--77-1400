@@ -1850,6 +1850,8 @@ footer {
 @media (max-width: 768px) {
     nav {
         .container {
+            width: 100%;
+            padding: 0px;
             .menu_bar {
                 display: block;
             }
@@ -1923,8 +1925,8 @@ footer {
                         .propaganda_PM {
                             .propaganda_picture {
                                 bottom: -80px;
-                                width: 40%;
-                                left: 3%;
+                                width: 45%;
+                                left: 0px;
                             }
 
                             .propaganda_main {
