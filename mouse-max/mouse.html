@@ -55,6 +55,7 @@
 
     .aniiii {
         animation: aniiii .4s linear 0s 1 alternate;
+       
     }
 </style>
 
@@ -181,7 +182,7 @@
         var pictureNum = 0;
         function pictureChang() {
             pictureNum++;
-            if (pictureNum > 4) {
+            if (pictureNum > 5) {
                 pictureNum = 0;
             }
         }
@@ -200,7 +201,7 @@
                 case 1:
                     //设置图片的路径,根据不同的路径就可以更改成不同的样式
 
-                    styleImg.innerHTML = "<img src='./img/1.jfif' style='width: 50px;height: auto;'/>"
+                    styleImg.innerHTML = "<img src='./img/dog1.png' style='width: 50px;height: auto;'/>"
                     // styleImg.classList.add('style-opacity');
                     styleImg.classList.add('aniiii');
                     setTimeout(function () {
@@ -208,21 +209,28 @@
                     }, 400)
                     break;
                 case 2:
-                    styleImg.innerHTML = "<img src='./img/2.jfif' style='width: 50px;height: auto;'/>"
+                    styleImg.innerHTML = "<img src='./img/dog2.png' style='width: 50px;height: auto;'/>"
                     styleImg.classList.add('aniiii');
                     setTimeout(function () {
                         styleImg.classList.remove('aniiii');
                     }, 400)
                     break;
                 case 3:
-                    styleImg.innerHTML = "<img src='./img/3.jfif' style='width: 50px;height: auto;'/>"
+                    styleImg.innerHTML = "<img src='./img/dog3.png' style='width: 50px;height: auto;'/>"
                     styleImg.classList.add('aniiii');
                     setTimeout(function () {
                         styleImg.classList.remove('aniiii');
                     }, 400)
                     break;
                 case 4:
-                    styleImg.innerHTML = "<img src='./img/4.jfif' style='width: 50px;height: auto;'/>"
+                    styleImg.innerHTML = "<img src='./img/dog4.png' style='width: 50px;height: auto;'/>"
+                    styleImg.classList.add('aniiii');
+                    setTimeout(function () {
+                        styleImg.classList.remove('aniiii');
+                    }, 400)
+                    break;
+                case 5:
+                    styleImg.innerHTML = "<img src='./img/dog5.png' style='width: 50px;height: auto;'/>"
                     styleImg.classList.add('aniiii');
                     setTimeout(function () {
                         styleImg.classList.remove('aniiii');
