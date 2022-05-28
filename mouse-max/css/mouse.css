@@ -6,6 +6,29 @@ body {
   background-color: #7b5c5c;
 }
 
+.style-opacity {
+  -webkit-animation: styOp .5s linear 3s;
+          animation: styOp .5s linear 3s;
+}
+
+@-webkit-keyframes styOp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes styOp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes cursorAnima {
   0% {
     opacity: 0;

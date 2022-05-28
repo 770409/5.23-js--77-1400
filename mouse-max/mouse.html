@@ -105,11 +105,6 @@
         }
 
 
-
-
-
-
-
         // function timefunction() {
         //     cursor.style.display = "none";
         // };
@@ -118,12 +113,6 @@
         document.addEventListener('mousemove', c => {
             icon.setAttribute("style", "top:" + (c.pageY - 30) + "px;" + "left:" + (c.pageX + 30) + "px;");
         })
-
-
-
-
-
-
 
         //滑鼠點擊
 
@@ -182,7 +171,11 @@
 
             var styleImg = document.createElement("div");
             //获取随机数1-5,根据随机数来设置标签的样式
+            
             var r = randomNum(1, 4);
+            // var r =1;
+
+          
             switch (r) {
                 case 1:
                     //设置图片的路径,根据不同的路径就可以更改成不同的样式
@@ -202,12 +195,13 @@
 
             // 由于要设置动画，设置left 和top，因此，必须要设置定位
             styleImg.style.position = 'absolute'
+            styleImg.classList.add('style-opacity');
             // 设置标签的初始位置，即鼠标的当前位置
             var x = getMousePosition(event).x;
             var y = getMousePosition(event).y;
             // 设置styleImg的坐标
-            styleImg.style.top = y + "px";
-            styleImg.style.left = x + "px";
+            styleImg.style.top = (y - 70) + "px";
+            styleImg.style.left = (x + 70) + "px";
             //绑定testDiv为当前鼠标小尾巴生效的区域
             var testDiv = document.querySelector("body");
             // 将新建的标签加到页面的 body标签中
@@ -216,7 +210,7 @@
             // 设置溢出隐藏，为了防止鼠标在移动的过程中会触发上下滚动条
             testDiv.style.overflow = 'hidden';
             //
-            testDiv.appendChild(styleImg);
+            // testDiv.appendChild(styleImg);
 
 
 
@@ -235,32 +229,28 @@
             // `;
 
             var count = 0;
+            // var count = 0;
             //setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式
             // var time = setInterval(function ()
             // {
             //     // 设置定时器 ，让每一次生成的标签在指定的周期内修改相应的透明度
             //     count += 5;
-            //     styleImg.style.opacity = (100 - count) / 100;
-            // },300)
+            //     styleImg.style.opacity = .5;
+            //     // styleImg.style.opacity = (100 - count) / 100;
+            // },500)
             // setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
             // 设置延时定时器， 在一定的时间后清除上面的定时器，让创建的标签不再进行变化
             setTimeout(function () {
                 // 使用 clearInterval() 来停止执行setInterval函数
                 // clearInterval(time);
                 // 删除创建的标签
+
+
+
+                
                 testDiv.removeChild(styleImg);
-            }, 2000)
-            // var cursor_stamp_icon = document.querySelector('.cursor-stamp-icon')
-            // var arrSeal = ["🐕","🐶","🦮","🦺"]
-            // var sealNum = 0;
-            // function sealChang() {
-            //     sealNum++;
-            //     if (sealNum > arrSeal.length-1) {
-            //         sealNum=0;
-            //     }
-            //     cursor_stamp_icon.textContent= arrSeal[sealNum];
-            // }
-            // setInterval(sealChang,2000)
+            }, 3500)
+
 
 
 

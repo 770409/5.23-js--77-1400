@@ -7,6 +7,22 @@ body {
     //     auto;
     background-color: rgb(123, 92, 92);
 }
+.style-opacity{
+    // transition: 1s;
+    // opacity: 0;
+    animation: styOp .5s linear 3s;
+}
+@keyframes styOp {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
 
 @keyframes cursorAnima {
     0% {
